@@ -16,9 +16,12 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Kyokushin karaté club de Goderville</title>
+    <title>Kyokushin Karaté Club de Goderville</title>
   </head>
   <body>
+
+        <!-- NAVBAR COLLAPSE -->
+
       <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark" id="navScroll">
         <div class="container-fluid">
           <button
@@ -32,21 +35,21 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- NAVBAR LOGO -->
+
           <a class="navbar-brand" href="#">
-            <img
-              srcset="Logo-KKCG-Blanc.png 480w,
-                      Logo-KKCG-Blanc-Blanc-Bandeau.png 1024w,
-                      Logo-KKCG-Blanc-Blanc-responsive.png 800w"
-              sizes="(max-width: 600px) 480px,
-                    800px,
-                    1024px"
-              src="Logo-KKCG-Blanc-Blanc-Bandeau.png"       
-              alt="Logo du club Kyokushin karaté de Goderville"
-              width="200"
-            />
+            <picture>
+                <source media="(max-width: 500px)" srcset="Logo-KKCG-Blanc.png" width="100">
+                <source media="(min-width: 800px)" srcset="Logo-KKCG-Blanc-Blanc-responsive.png">
+                <img src="Logo-KKCG-Blanc-Blanc-Bandeau.png" width="200" alt="Logo du Kyokushin karaté club de goderville">
+              </picture>
           </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+
+          <!-- NAVBAR MENU -->
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#Actu"
                   >Actualités</a
@@ -64,19 +67,30 @@
               <li class="nav-item">
                 <a class="nav-link" href="#Contact">Nous contacter</a>
               </li>
-            </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">FR</a>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item text-end" href="#">ENG</a></li>
+                </ul>
+            </li>
           </div>
         </div>
       </nav>
+
+      <!-- HEADER -->
+
       <header>
       <div class="container-fluid">
         <div class="row tophead mb-4">
           <h1 class="align-self-center text-end py-5 text-white">
-            Kyokushin karaté club de Goderville
+            Kyokushin Karaté Club de Goderville
           </h1>
         </div>
       </div>
     </header>
+
+    <!-- ACTUALITES -->
+
     <section>
       <div class="container" id="Actu">
         <div class="row">
@@ -195,6 +209,8 @@
       </div>
     </section>
 
+    <!-- LE CLUB -->
+
     <div class="container" data-aos="fade-up" id="Club">
       <div class="row">
         <h2 class="pb-3">Le club</h2>
@@ -233,27 +249,31 @@
       </div>
     </div>
 
+    <!-- LES PROFESSEURS -->
+
     <div class="container" id="Prof">
         <div class="row">
         <h2 class="pb-3 pt-4" data-aos="fade-up">Nos professeurs</h2>
-        <div class="col-sm-4" data-aos="fade-up">
+        <div class="text-center col-sm-4" data-aos="fade-up">
             <img class="img-fluid" src="assets/img/prof/François-VALLEE.png"
                  alt="Le professeur François VALLEE">
             <h4 class="pt-2">François VALLEE</h4>
         </div>
-        <div class="col-sm-4" data-aos="fade-up">
+        <div class="text-center col-sm-4" data-aos="fade-up">
               <img class="img-fluid" src="assets/img/prof/Christelle-PIERROZ.png"
                    alt="La professeure Christelle PERROZ">
               <h4 class="pt-2">Christelle PERROZ</h4>
           </div>
-          <div class="col-sm-4" data-aos="fade-up">
+          <div class="text-center col-sm-4" data-aos="fade-up">
               <img class="img-fluid" src="assets/img/prof/Marc-LEPAGE.jpg"
                    alt="Le professeur Marc LEPAGE">
               <h4 class="pt-2">Marc LEPAGE</h4>
-          </figure>
           </div>
         </div>
       </div>
+
+      <!-- LES COURS -->
+        <!-- LES COURS -->
 
       <section>
         <div class="container pt-3" id="Cours">
@@ -348,10 +368,15 @@
         </div>
       </section>
 
+      <!-- NOUS TROUVER -->
+
       <div class="container pb-3" id="Contact">
         <div class="row">
           <h2 class="pb-3" data-aos="fade-up">Nous Trouver</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2583.5031966049823!2d0.3580448509938417!3d49.644817352863804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e04086831c81d7%3A0x59e07ea7752047f9!2sRue%20du%20Ham.%20Martin%2C%2076110%20Goderville!5e0!3m2!1sfr!2sfr!4v1648796801669!5m2!1sfr!2sfr" data-aos="fade-up" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!-- NOUS CONTACTER -->
+
           <h2 class="pt-3" data-aos="fade-up">Nous contacter</h2>
           <form class="" data-aos="fade-up">
           <div class="form-floating m-3">
@@ -379,7 +404,9 @@
         </div>
       </div> 
 
-      <footer data-aos="fade-up">
+      <!-- FOOTER -->
+
+      <footer>
           <div class="container-fluid bg-dark">
                 <div class="row text-center">
                     <form class="pt-4">
@@ -426,13 +453,6 @@
                   </nav>
             </div>
       </footer>
-
-
-
-
-
-
-
 
 
       <!-- Modal tarif cours karaté adulte -->
