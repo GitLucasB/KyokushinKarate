@@ -6,7 +6,10 @@ h1 {
   font-size: 4em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 3em;
+}
+.bg-dark{
+    background-color: #a8aa98 !important;
 }
 .tophead {
   background: url(../img/tournoi.jpg);
@@ -17,8 +20,40 @@ h2 {
 .dropdown-menu{
     min-width: 0;
 }
+.btn{
+    border-color: #E30016;
+}
+.btn-secondary{
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-secondary:hover{
+    background-color: #212429;
+    border-color: #212429;
+}
+.btn-outline-primary{
+    color: #E30016;
+}
+.btn-outline-primary:hover{
+    background-color: #E30016;
+    border-color: #E30016;
+}
+.btn-outline-primary:active{
+    background-color: #E30016;
+    border-color: #E30016;
+}
+.navbar-toggler{
+    border: 0;
+}
+.form-check-input:checked{
+    background-color: #E30016;
+    border-color: #E30016;
+}
 @media only screen and (max-width: 390px) {
     h2{
         font-size: 2em;
+    }
+    picture img{
+        width: 70px;
     }
   }
