@@ -9,7 +9,7 @@ h2 {
   font-size: 3em;
 }
 .bg-dark{
-    background-color: #a8aa98 !important;
+    background-color: #abaf9c !important;
 }
 .tophead {
   background: url(../img/tournoi.jpg);
@@ -49,6 +49,14 @@ h2 {
     background-color: #E30016;
     border-color: #E30016;
 }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+  }
 @media only screen and (max-width: 390px) {
     h2{
         font-size: 2em;
