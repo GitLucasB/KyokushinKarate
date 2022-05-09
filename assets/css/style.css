@@ -4,6 +4,10 @@ body {
 }
 h1 {
   font-size: 4em;
+  font-family: "Coves";
+  src: url("../fonts/Coves\ Bold.otf");
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #212429;
 }
 h2 {
   font-size: 3em;
